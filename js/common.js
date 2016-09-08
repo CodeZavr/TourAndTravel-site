@@ -58,21 +58,4 @@ $(function() {
 		$(".section-6__title, .section-6__descr").animated("fadeIn");
 		$(".section-6__button").animated("flip");
 
-	// Form validation
-
-	function ValidateEmail(mail)   
-	{  
-		if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))  
-		{  
-			console.log(true)  
-		}  
-		alert("You have entered an invalid email address!")  
-		return (false)
-	}
-
-	$(".footer__submit").click(function(e){
-		e.preventDefault();
-		console.log(this.elements[0].value);
-	});
-
 });
